@@ -6,10 +6,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="MacTmp",
-    version="0.0.2",
+    version="0.0.6",
     author="Kethan",
     author_email="kethan@vegunta.com",
-    description="A package used to get temperature on Mac OS Machines. ",
+    description="A package used to get temperatures on Mac OS Machines. ",
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=setuptools.find_packages(),

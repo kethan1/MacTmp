@@ -2,3 +2,4 @@
 /dist/*
 /MacTmp.egg-info/*
 /MacTmp/__pycache__/*
+.DS_Store

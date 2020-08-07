@@ -5,19 +5,18 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="WinTmp",
-    version="0.0.3",
+    name="MacTmp",
+    version="0.0.1",
     author="Kethan",
     author_email="kethan@vegunta.com",
-    description="A package used to get temperature on Windows Machines. ",
+    description="A package used to get temperature on Mac OS Machines. ",
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=setuptools.find_packages(),
-    install_requires=['pythonnet', 'wmi'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
-        "Operating System :: Microsoft :: Windows",
+        "Operating System :: MacOS",
     ],
-    python_requires='>=3.5',
+    python_requires='>=3.3',
 )

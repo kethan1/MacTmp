@@ -16,7 +16,7 @@ Below is the example code:
 >>>print(MacTmp.CPU_Temp()) #To get CPU Temperature
 
 >>>print(MacTmp.GPU_Temp()) #To get GPU Temperature
-
+```
 
 Pypi page here: https://pypi.org/project/MacTmp/
 

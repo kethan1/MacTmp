@@ -18,6 +18,8 @@ Below is the example code:
 >>>print(MacTmp.GPU_Temp()) #To get GPU Temperature
 ```
 
+Note: The gpu_temp does not work with Intel Integrated Graphics. 
+
 Pypi page here: https://pypi.org/project/MacTmp/
 
 Github Page Here: https://github.com/kethan1/MacTmp/

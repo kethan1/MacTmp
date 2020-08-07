@@ -1,0 +1,4 @@
+/build/*
+/dist/*
+/MacTmp.egg-info/*
+/MacTmp/__pycache__/*

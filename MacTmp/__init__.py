@@ -4,7 +4,15 @@ import os
 
 def CPU_Temp():
     tmp = [each.strip() for each in (os.popen('sudo powermetrics --samplers smc -i1 -n1')).read().split('\n') if each != '']
-    return tmp[12].strip('CPU die temperature: ')
+    for each in tmp:
+        if 'CPU die temperature' in tmp:
+            return each.strip('CPU die temperature: ')
+    return 'CPU Temperature not found'
 
 def GPU_Temp():
-    return [i.strip('GPU die temperature: ' for i in os.popen('sudo powermetrics|grep -i "GPU die temperature"').readlines())]
+    # Will not work with Integrated Intel Gpu
+    tmp = [each.strip() for each in (os.popen('sudo powermetrics --samplers smc -i1 -n1')).read().split('\n') if each != '']
+    for each in tmp:
+        if 'GPU die temperature' in tmp:
+            return each.strip('GPU die temperature: ')
+    return 'GPU Temperature not found'

@@ -3,6 +3,7 @@
 This is a python module used to getting temperatures of the cpu and gpu in Mac OS. If a hardware configurate does not work, make sure to open an issue. 
 
 Python2 Installation: `pip install MacTmp`
+
 Python3 Installation: `pip3 install MacTmp`
 
 Please run this with `sudo`

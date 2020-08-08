@@ -2,11 +2,13 @@
 
 This is a python module used to getting temperatures of the cpu and gpu in Mac OS. If a hardware configurate does not work, make sure to open an issue. 
 
-`pip install MacTmp` for Python2 or `pip3 install MacTmp` for Python3
+Python2 Installation: `pip install MacTmp`
+Python3 Installation: `pip3 install MacTmp`
 
 Please run this with `sudo`
 
-`sudo Python` in Python2 or `sudo Python3` in Python3 
+Python2: `sudo python`
+Python3: `sudo python3`
 
 Below is the example code:
 
@@ -17,6 +19,8 @@ Below is the example code:
 
 >>>print(MacTmp.GPU_Temp()) #To get GPU Temperature
 ```
+
+Both temperatures are in celcius. 
 
 Note: GPU temperature does not work with Intel Integrated Graphics. 
 

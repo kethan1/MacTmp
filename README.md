@@ -8,6 +8,7 @@ Python3 Installation: `pip3 install MacTmp`
 Please run this with `sudo`
 
 Python2: `sudo python`
+
 Python3: `sudo python3`
 
 Below is the example code:

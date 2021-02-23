@@ -21,4 +21,4 @@ jobs:
         python -m pip install --upgrade pip
     - name: Testing
       run: |
-        sudo powermetrics --samplers smc -i1 -n1
+        sudo powermetrics

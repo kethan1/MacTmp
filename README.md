@@ -2,19 +2,15 @@
 
 This is a python module used to find the temperatures of the CPU and GPU in Mac OS. If there is an issue with this module, please open an issue. 
 
-Python2 Installation: `pip install MacTmp`
-
-Python3 Installation: `pip3 install MacTmp`
+Installation: `pip3 install MacTmp`
 
 Please run this with `sudo`
 
-Python2: `sudo python`
-
-Python3: `sudo python3`
+Run: `sudo python3 file.py`
 
 Below is the example code:
 
-```python
+```python3
 >>>import MacTmp
 
 >>>print(MacTmp.CPU_Temp()) #To get CPU Temperature

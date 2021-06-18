@@ -12,10 +12,8 @@ Below is the example code:
 
 ```python3
 >>> import MacTmp
-
->>> print(MacTmp.CPU_Temp()) #To get CPU Temperature
-
->>> print(MacTmp.GPU_Temp()) #To get GPU Temperature
+>>> print(MacTmp.CPU_Temp())  # To get CPU Temperature
+>>> print(MacTmp.GPU_Temp())  # To get GPU Temperature
 ```
 
 Both temperatures are in Celcius. 

@@ -18,7 +18,7 @@ Below is the example code:
 
 Both temperatures are in Celcius. 
 
-Note: GPU temperature does not work with Intel Integrated Graphics. 
+Note: GPU temperature does not work with Intel Integrated Graphics. This module doesn't work with Mac Mini's, and support for M1 Macs is untested. This module relies on `powermetrics`, so if that command works, this module should work. 
 
 PyPI page here: https://pypi.org/project/MacTmp/
 

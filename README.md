@@ -16,7 +16,7 @@ Below is the example code:
 >>> print(MacTmp.GPU_Temp())  # To get GPU Temperature
 ```
 
-Both temperatures are in Celcius. 
+Both temperatures are in Celsius. 
 
 Note: GPU temperature does not work with Intel Integrated Graphics. This module doesn't work with Mac Mini's, and support for M1 Macs is untested. This module relies on `powermetrics`, so if that command works, this module should work. 
 

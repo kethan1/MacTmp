@@ -1,8 +1,7 @@
 import setuptools
 
-
 with open("README.md", "r") as fh:
-    long_description = fh.read()
+	long_description = fh.read()
 
 setuptools.setup(
     name="MacTmp",
@@ -19,5 +18,8 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: MacOS",
     ],
+    entry_points={
+		    'console_scripts': ['mactmp=MacTmp:run'],
+	  },
     python_requires='>=3.3',
 )

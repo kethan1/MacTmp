@@ -4,6 +4,24 @@ This is a python module used to find the temperatures of the CPU and GPU in Mac 
 
 Installation: `pip3 install MacTmp`
 
+## Usage in CLI
+
+```shell
+~ mactmp --help
+usage: mactmp [-h] [-c] [-g] [-a]
+
+Get CPU and GPU Temperature
+
+optional arguments:
+  -h, --help  show this help message and exit
+  -c, --cpu   Get CPU Temperature
+  -g, --gpu   Get GPU Temperature
+  -a, --all   Get CPU and GPU Temperature
+
+```
+
+## Usage in code
+
 Please run this with `sudo`
 
 Run: `sudo python3 file.py`

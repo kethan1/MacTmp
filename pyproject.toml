@@ -1,0 +1,26 @@
+[project]
+name = "mactmp"
+version = "0.0.9"
+description = "A package used to get temperatures on Mac OS Machines. "
+url = "https://github.com/kethan1/MacTmp"
+
+authors = [
+  {name = "Kethan", email = "kethan@vegunta.com"},
+]
+
+readme = "README.md"
+requires-python = ">=3.3"
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: MacOS",
+]
+
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[project.scripts]
+mactmp = "MacTmp:run"

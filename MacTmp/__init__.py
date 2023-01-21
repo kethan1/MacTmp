@@ -1,7 +1,7 @@
 import os
 
 # ioreg -l |grep \"PerformanceStatistics\" | cut -d '{' -f 2 | tr '|' ',' | tr -d '}' | tr ',' '\n'|grep 'Temp\|Fan\|Clock'; done
-
+VERSION = '0.0.9'
 
 def CPU_Temp():
 	cpu_temp = [each.strip() for each in (os.popen('sudo powermetrics --samplers smc -i1 -n1')).read().split('\n') if each != '']
@@ -30,6 +30,8 @@ def run():
 	parser.add_argument('-c', '--cpu', action='store_true', help='Get CPU Temperature')
 	parser.add_argument('-g', '--gpu', action='store_true', help='Get GPU Temperature')
 	parser.add_argument('-a', '--all', action='store_true', help='Get CPU and GPU Temperature')
+	parser.add_argument('-v', '--version', action='version', version=VERSION)
+
 	args = parser.parse_args()
 	if args.cpu:
 		print(CPU_Temp())
